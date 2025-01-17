@@ -61,13 +61,13 @@ class Ui_MainWindow(object):
         self.labelOrderAdd.setAlignment(QtCore.Qt.AlignCenter)
         self.labelOrderAdd.setObjectName("labelOrderAdd")
         self.textAddStartPlace = QtWidgets.QTextEdit(self.centralwidget)
-        self.textAddStartPlace.setGeometry(QtCore.QRect(50, 190, 201, 31))
+        self.textAddStartPlace.setGeometry(QtCore.QRect(50, 190, 180, 31))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.textAddStartPlace.setFont(font)
         self.textAddStartPlace.setObjectName("textAddStartPlace")
         self.textAddEndPLace = QtWidgets.QTextEdit(self.centralwidget)
-        self.textAddEndPLace.setGeometry(QtCore.QRect(50, 240, 201, 31))
+        self.textAddEndPLace.setGeometry(QtCore.QRect(50, 240, 180, 31))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.textAddEndPLace.setFont(font)
@@ -92,8 +92,8 @@ class Ui_MainWindow(object):
         self.AddButton.setText(_translate("MainWindow", "Создать"))
         self.textAddPrice.setPlaceholderText(_translate("MainWindow", "Введите цену"))
         self.labelOrderAdd.setText(_translate("MainWindow", "Добавить Заказ"))
-        self.textAddStartPlace.setPlaceholderText(_translate("MainWindow", "Введите starting_place"))
-        self.textAddEndPLace.setPlaceholderText(_translate("MainWindow", "Введите end_place"))
+        self.textAddStartPlace.setPlaceholderText(_translate("MainWindow", "Начальное место"))
+        self.textAddEndPLace.setPlaceholderText(_translate("MainWindow", "Конечное место"))
 
 
 if __name__ == "__main__":

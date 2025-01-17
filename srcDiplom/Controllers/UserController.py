@@ -15,6 +15,14 @@ class UserController:
         return f"Пользователь {login} добавлен в систему"
 
     @classmethod
+    def update(cls, id, new_name):
+        Users.update({Users.fullname: new_name}).where(Users.id == id).execute()
+
+    @classmethod
+    def delete(cls, id):
+        Users.delete_by_id(id)
+
+    @classmethod
     def auth(cls, login, password):
         if Users.get_or_none(Users.login == login) != None:
             paswd = Users.get_or_none(Users.login == login).password
